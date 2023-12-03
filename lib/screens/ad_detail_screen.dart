@@ -3,7 +3,6 @@ import 'package:divar_app/constants/list.dart';
 import 'package:divar_app/widgets/elevated_button.dart';
 import 'package:divar_app/widgets/title_with_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:dotted_border/dotted_border.dart';
 
 class AdDetailScreen extends StatefulWidget {
   const AdDetailScreen({super.key});
