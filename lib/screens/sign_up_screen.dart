@@ -1,3 +1,5 @@
+import 'package:divar_app/screens/login_screen.dart';
+import 'package:divar_app/screens/verification_signup_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -109,7 +111,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       Image.asset('assets/images/arrow-left.png'),
                     ],
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const VerificationPhoneSignupScreen(),
+                      ),
+                    );
+                  },
                 ),
                 const SizedBox(height: 10.0),
                 Row(
@@ -124,7 +133,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const LoginScreen(),
+                        ));
+                      },
                       child: const Text(
                         'ورود',
                         style: TextStyle(

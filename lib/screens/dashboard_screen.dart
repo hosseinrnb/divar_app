@@ -14,6 +14,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       textDirection: TextDirection.rtl,
       child: Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           backgroundColor: Colors.white,
           centerTitle: true,
           title: Image.asset('assets/images/myAviz.png'),
